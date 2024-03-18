@@ -99,6 +99,7 @@ func main() {
 		defer func(file *database.BDFile) {
 			err := file.Close()
 			if err != nil {
+				log.Println(errs.ErrCloseFile)
 				return
 			}
 		}(file)
@@ -128,7 +129,7 @@ func main() {
 
 	err := server.ListenAndServe()
 	if err != nil {
-		err = fmt.Errorf("filed to runing server: %w", err)
+		err = fmt.Errorf(errs.ErrRunningServer, err)
 		log.Println(err)
 		return
 	}
