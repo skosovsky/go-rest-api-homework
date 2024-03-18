@@ -209,8 +209,10 @@ linters-settings:
     ignore-chan-recv-ok: false
     # Optional list of variable names that should be ignored completely. (defaults to empty list)
     ignore-names:
-      - err
       - id
+      - bd
+      - ok
+      - err
     # Optional list of variable declarations that should be ignored completely. (defaults to empty list)
     # Entries must be in one of the following forms (see below for examples):
     # - for variables, parameters, named return values, method receivers, or type parameters:
