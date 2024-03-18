@@ -1,0 +1,96 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: API Server for TODOList Application
+  title: Task API
+  version: "0.1"
+paths:
+  /tasks:
+    get:
+      consumes:
+      - application/json
+      description: get all tasks in map struct
+      operationId: get-tasks
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "500":
+          description: InternalServerError
+          schema:
+            type: string
+    post:
+      consumes:
+      - application/json
+      description: post task
+      operationId: post-task
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+  /tasks-list:
+    get:
+      consumes:
+      - application/json
+      description: get all tasks in slice struct
+      operationId: get-tasks-list
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "500":
+          description: internal server error
+          schema:
+            type: string
+  /tasks/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: delete task by ID
+      operationId: delete-task-by-id
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+    get:
+      consumes:
+      - application/json
+      description: get task by ID
+      operationId: get-task-by-id
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+        "500":
+          description: internal server error
+          schema:
+            type: string
+swagger: "2.0"
