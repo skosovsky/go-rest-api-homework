@@ -12,15 +12,15 @@ help: Makefile ## Show this help
 build: ## Build an application
 	@echo "Building ${APP} ..."
 	mkdir -p build
-	go build -o build/${APP} main.go
+	go build -o build/${APP} cmd/api/main.go
 
 run: ## Run an application
 	@echo "Starting ${APP} ..."
-	go run main.go
+	go run cmd/api/main.go
 
 test: ## Run an application
 	@echo "Testing ${APP} ..."
-	go test
+	go test .
 
 bench: ## Run an application
 	@echo "Benchmarking ${APP} ..."

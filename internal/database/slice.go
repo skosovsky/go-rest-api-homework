@@ -1,9 +1,9 @@
-package databases
+package database
 
 import (
 	"strconv"
 
-	"github.com/skosovsky/go-rest-api-homework/models"
+	"github.com/skosovsky/go-rest-api-homework/internal/models"
 )
 
 type BDSlc []models.Task

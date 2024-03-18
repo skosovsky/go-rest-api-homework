@@ -53,7 +53,7 @@ paths:
           schema:
             type: string
         "500":
-          description: internal server rrror
+          description: internal server error
           schema:
             type: string
   /tasks/{id}:

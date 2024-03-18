@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/skosovsky/go-rest-api-homework/models"
+	"github.com/skosovsky/go-rest-api-homework/internal/models"
 )
 
 type BDer interface {

@@ -83,7 +83,7 @@ const docTemplate = `{
                         }
                     },
                     "500": {
-                        "description": "internal server rrror",
+                        "description": "internal server error",
                         "schema": {
                             "type": "string"
                         }

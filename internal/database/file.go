@@ -1,4 +1,4 @@
-package databases
+package database
 
 import (
 	"encoding/json"
@@ -9,7 +9,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/skosovsky/go-rest-api-homework/models"
+	"github.com/skosovsky/go-rest-api-homework/internal/models"
 )
 
 const (
